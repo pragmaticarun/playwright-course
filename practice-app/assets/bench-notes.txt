@@ -1,0 +1,4 @@
+Workshop Bench notes
+pin: bench-2026.11
+tools: rustc, cargo, adb
+This file is a local fixture for download tests.

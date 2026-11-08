@@ -1,0 +1,41 @@
+{
+  "name": "playwright-bench",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --port 43123",
+    "build": "next build",
+    "lint": "eslint",
+    "practice": "node practice-app/server.js",
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:cross": "playwright test --project=firefox --project=webkit",
+    "test:site": "playwright test -c playwright.course.config.ts",
+    "validate": "node scripts/validate-lessons.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "1.2.12",
+    "@radix-ui/react-dialog": "1.1.15",
+    "@radix-ui/react-slot": "1.2.3",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "highlight.js": "11.11.1",
+    "lucide-react": "0.553.0",
+    "next": "16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tailwind-merge": "3.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.65.0",
+    "@tailwindcss/turbopack": "4.3.5",
+    "@types/node": "22.19.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.5",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3"
+  }
+}
